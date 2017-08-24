@@ -1,0 +1,81 @@
+div.pright {
+    position: absolute;
+    background-image: url("people.png");
+    background-size: 75px 130px;
+    z-index:2;
+}
+div.pleft {
+    position: absolute;
+    background-image: url("peopleleft.png");
+    background-size: 75px 130px;
+    z-index:2;
+}
+div.peoplehurt {
+    position: absolute;
+    height:130px;
+    width:75px;
+    z-index:2;
+    animation:hurt 1S infinite;
+    animation-direction:alternate;
+}
+div.peoplesuccess {
+    position: absolute;
+    height:130px;
+    width:75px;
+    z-index:2;
+    animation:success 1S infinite;
+}
+div.plmove {
+    position: absolute;
+    background-image: url("peoplewalkleft.png");
+    height:130px;
+    width:75px;
+    z-index:2;
+    background-position: 0;
+    animation:pmove 0.5S infinite;
+    animation-direction:normal;
+    animation-timing-function: step-start;
+}
+div.prmove {
+    position: absolute;
+    background-image: url("peoplewalkright.png");
+    height:130px;
+    width:75px;
+    z-index:2;
+    background-position: 0;
+    animation:pmove 0.5S infinite;
+    animation-direction:normal;
+    animation-timing-function: step-start;
+}
+@-webkit-keyframes hurt
+{
+    0% {opacity:0.5;}
+    16.6%{opacity:1;}
+    33.3%{opacity:0.5;}
+    50%{opacity:1;}
+    66.7%{opacity:0.5;}
+    83.3%{opacity:1;}
+    100%{opacity:0.5;}
+}
+@-webkit-keyframes pmove {
+    0% {background-position: 0;}
+    11.1%{background-position: 75px;}
+    22.2%{background-position: 150px;}
+    33.3%{background-position: 225px;}
+    44.4%{background-position: 300px;}
+    55.5%{background-position: 375px;}
+    66.7%{background-position: 450px;}
+    77.8%{background-position: 525px;}
+    88.9%{background-position: 600px;}
+    100%{background-position: 675px;}
+}
+@-webkit-keyframes success
+{
+    0% {opacity:1;}
+    16.6%{opacity:0.83;}
+    33.3%{opacity:0.67;}
+    50%{opacity:0.5;}
+    66.7%{opacity:0.33;}
+    83.3%{opacity:0.17;}
+    100%{opacity:0;}
+}

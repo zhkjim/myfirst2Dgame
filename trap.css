@@ -1,0 +1,7 @@
+div.trap{
+    position: absolute;
+    z-index:2;
+    background-image: url("地刺1.png");
+    background-repeat: repeat-x;
+    background-size: 50px 30px;
+}

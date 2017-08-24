@@ -1,0 +1,8 @@
+
+#bullet{
+    position: absolute;
+    background-image: url("bullet.png");
+    height: 22px;
+    width: 50px;
+    z-index:2;
+}

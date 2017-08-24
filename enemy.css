@@ -1,0 +1,35 @@
+.mummyr {
+    position: absolute;
+    height: 150px;
+    width: 75px;
+    background-image: url("mummywalkright.png");
+    background-position: 0;
+    animation:mmove 1S infinite;
+    animation-direction:normal;
+    animation-timing-function: step-end;
+    z-index: 2
+}
+
+.mummyl {
+    position: absolute;
+    height: 150px;
+    width: 75px;
+    background-image: url("mummywalkleft.png");
+    background-position: 0;
+    animation:mmove 1S infinite;
+    animation-direction:normal;
+    animation-timing-function: step-start;
+    z-index: 2
+}
+@-webkit-keyframes mmove {
+    0% {background-position: 0;}
+    11.1%{background-position: 75px;}
+    22.2%{background-position: 150px;}
+    33.3%{background-position: 225px;}
+    44.4%{background-position: 300px;}
+    55.5%{background-position: 375px;}
+    66.7%{background-position: 450px;}
+    77.8%{background-position: 525px;}
+    88.9%{background-position: 600px;}
+    100%{background-position: 675px;}
+}

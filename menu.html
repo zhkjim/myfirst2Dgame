@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Game Menu</title>
+</head>
+<style>
+    div.menu{
+        position: fixed;
+        width: 900px;
+        height: 600px;
+        background-image: url("start menu.png");
+        background-repeat: no-repeat;
+        background-size:900px 600px;
+        z-index: 0;
+    }
+    div.start{
+        position: absolute;
+        left:370px;
+        top:420px;
+        height: 70px;
+        width: 170px;
+        background-image: url("start.png");
+        background-repeat: no-repeat;
+        background-size:170px 70px;
+    }
+    div.exit{
+        position: absolute;
+        left:370px;
+        top:500px;
+        height: 70px;
+        width: 170px;
+        background-image: url("exit.png");
+        background-repeat: no-repeat;
+        background-size:170px 70px;
+    }
+</style>
+<body>
+<div class="menu">
+    <div class="start"></div>
+    <div class="exit"></div>
+</div>
+</body>
+<script>
+    document.getElementsByClassName("start")[0].onclick= function () {
+        window.open('gametest1.html');
+        window.close();
+    };
+    document.getElementsByClassName("exit")[0].onclick= function () {
+        window.close();
+    }
+</script>
+</html>

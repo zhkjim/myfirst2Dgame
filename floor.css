@@ -1,0 +1,11 @@
+.floor {
+    position: absolute;
+    z-index:1;
+    background-image: url("埃及地板.jpg");
+
+}
+#door{
+    position: absolute;
+    z-index:1;
+    background-image: url("door.png");
+}

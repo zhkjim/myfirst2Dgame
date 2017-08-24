@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Demo</title>
+    <link rel="stylesheet" href="container.css"/>
+    <link rel="stylesheet" href="UI.css"/>
+    <link rel="stylesheet" href="floor.css"/>
+    <link rel="stylesheet" href="bullet.css"/>
+    <link rel="stylesheet" href="enemy.css"/>
+    <link rel="stylesheet" href="trap.css"/>
+    <link rel="stylesheet" href="player.css"/>
+</head>
+<body onload="initAll()">
+<div class="container">
+    <div id="gameover">
+        <img src="gameovertitle.png" id="over">
+        <div id="restart"></div>
+        <div class="exit"></div>
+    </div>
+    <div id="nextlevel">
+        <img src="congratulation.png" id="con">
+        <div id="next"></div>
+        <div class="exit"></div>
+    </div>
+    <div id="camera" class="camera">
+        <span id="fps"></span>
+        <div id="UIhealth"></div>
+        <div id="bgmcontroler" class="bgm1"></div>
+        <div id="scene" class="scene">
+        <audio src="BGM.mp3" loop="loop" autoplay="autoplay" id="bgm"></audio>
+        </div>
+    </div>
+</div>
+</body>
+<script src="jquery-3.2.0.js"></script>
+<script src="buttons.js"></script>
+<script src="fps.js"></script>
+<script src="gravity.js"></script>
+<script src="Keyboard.js"></script>
+<script src="bullets.js"></script>
+<script src="trap.js"></script>
+<script src="enemy.js"></script>
+<script src="player.js"></script>
+<script src="position.js"></script>
+<script src="Allcenter.js"></script>
+</html>

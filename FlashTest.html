@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        #mummy{
+            height: 150px;
+            width: 75px;
+            background-image: url("mummy.png");
+            background-position: 450px;
+            animation:mymove 0.6S infinite;
+            animation-direction:alternate;
+            animation-timing-function: step-end;
+        }
+        @-webkit-keyframes mymove
+         {
+             0% {background-position: 450px;}
+             16.6%{background-position: 375px;}
+             33.3%{background-position: 300px;}
+             50%{background-position: 225px;}
+             66.7%{background-position: 150px;}
+             83.3%{background-position: 75px;}
+             100%{background-position: 0;}
+         }
+    </style>
+</head>
+<body>
+<div id="mummy"></div>
+</body>
+</html>
